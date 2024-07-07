@@ -41,7 +41,7 @@ const Auth = () => {
             }}
             ref={loginRef}
           >
-            Log In
+           Sign In
           </button>
         </div>
         {!open ? (
