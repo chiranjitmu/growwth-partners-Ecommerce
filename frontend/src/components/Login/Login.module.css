@@ -80,3 +80,13 @@
   margin-top: 2rem;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 600px) {
+  .label {
+    width: 7rem;
+  }
+  .inputBox {
+    width: 10rem;
+  }
+}
