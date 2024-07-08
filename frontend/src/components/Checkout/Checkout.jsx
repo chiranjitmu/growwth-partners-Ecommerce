@@ -78,7 +78,11 @@ function Checkout() {
           progress: undefined,
           theme: "dark",
         });
-        localStorage.removeItem("cart");
+
+        setTimeout(() => {
+          localStorage.removeItem("cart");
+          navigate("/");
+        }, 2000);
       });
     }
   };

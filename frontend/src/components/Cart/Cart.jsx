@@ -41,7 +41,7 @@ function Cart() {
             {cart.map((product, index) => (
                 <div key={product._id} className={styles.cartItem}>
                     <img src={product.imageUrl} alt={product.name} />
-                    <h2>{product.name.slice(0, 10)}...</h2>
+                    <h2>{product?.name?.slice(0, 10)}...</h2>
                     <p>₹{product.price}</p>
                     <div className={styles.quantity}>
                         <button onClick={() => decrementQuantity(index)}>-</button>
